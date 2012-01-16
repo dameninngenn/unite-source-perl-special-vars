@@ -1,6 +1,7 @@
 " http://blog.layer8.sh/ja/2011/12/09/perl%E3%81%AE%E7%9C%81%E7%95%A5%E8%A8%98%E6%B3%95%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E7%89%B9%E6%AE%8A%E5%A4%89%E6%95%B0%E4%B8%80%E8%A6%A7/
 " TODO エンターでサンプルコード見れるようにする
 "      説明文わかりやすくする
+"      初回実行時にエラーが出るので直す
 let s:unite_source = {
 \   'name': 'perl_special_vars',
 \ }
