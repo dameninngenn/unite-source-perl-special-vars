@@ -46,7 +46,7 @@ function! s:unite_source.gather_candidates(args, context)
   \   { 'word': '@INC 【perlライブラリ検索ディレクトリ】', 'source': 'perl_special_vars', 'kind': 'word' },
   \   { 'word': '%INC 【読み込まれたライブラリファイルの配列】', 'source': 'perl_special_vars', 'kind': 'word' },
   \   { 'word': '__LINE__ 【スクリプト中の現在の行数】', 'source': 'perl_special_vars', 'kind': 'word' },
-  \   { 'word': '__FILE__ 【スクリプトのファイル名】', 'source': 'perl_special_varperl_special_vars', 'kind': 'word' },
+  \   { 'word': '__FILE__ 【スクリプトのファイル名】', 'source': 'perl_special_vars', 'kind': 'word' },
   \ ]
 endfunction
 call unite#define_source(s:unite_source)
