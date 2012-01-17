@@ -1,11 +1,11 @@
 " http://blog.layer8.sh/ja/2011/12/09/perl%E3%81%AE%E7%9C%81%E7%95%A5%E8%A8%98%E6%B3%95%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E7%89%B9%E6%AE%8A%E5%A4%89%E6%95%B0%E4%B8%80%E8%A6%A7/
 " TODO エンターでサンプルコード見れるようにする
 "      説明文わかりやすくする
-let s:unite_source_perl_special_vars = {
+let s:source_perl_special_vars = {
 \   'name': 'perl_special_vars',
 \ }
 
-function! s:unite_source_perl_special_vars.gather_candidates(args, context)
+function! s:source_perl_special_vars.gather_candidates(args, context)
   return [
   \   { 'word': '$. 【ファイルから読み込み時の現在の行数】', 'source': 'perl_special_vars', 'kind': 'word' },
   \   { 'word': '$/ 【入力時のレコード区切り文字。通常は改行。】', 'source': 'perl_special_vars', 'kind': 'word' },
@@ -51,6 +51,6 @@ function! s:unite_source_perl_special_vars.gather_candidates(args, context)
   \ ]
 endfunction
 function! unite#sources#perl_special_vars#define()
-  return s:unite_source_perl_special_vars
+  return s:source_perl_special_vars
 endfunction
 
